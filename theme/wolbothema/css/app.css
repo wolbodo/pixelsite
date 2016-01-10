@@ -1,0 +1,269 @@
+/*
+Colors:
+    Black:  #000;
+    White:  #F8F8FF;
+    Red:    #9E0000;
+    Yellow: #FFBE05;
+    Green:  #1E8A21;
+
+*/
+
+
+body {
+    background-color: #000;
+    font-family: "Share Tech Mono";
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    font-size: 16px;
+    color: #F8F8FF;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'VT323', serif;
+    color: #FFBE05;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 34px;
+    font-family: 'VT323', serif;
+    color: #FFBE05;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 28px;
+    font-family: 'VT323', serif;
+    color: #FFBE05;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'VT323', serif;
+    color: #FFBE05;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: 'VT323', serif;
+    color: #FFBE05;
+}
+
+h6 {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5em;
+}
+
+a {
+    color: #1E8A21;
+}
+
+a:hover {
+    color: #4D9C9A;
+    text-decoration: underline;
+}
+
+p, ul, ol {
+    margin: 0 0 1em 0;
+}
+
+ul {
+    margin-left: 17px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+pre {
+    padding: 4px 0;
+    overflow-y: auto;
+    overflow-x: scroll;
+}
+
+aside {
+    margin-top: 20px;
+}
+
+aside p {
+    font-size: 14px;
+}
+
+hr {/* Fallback dashed border
+     - the 4px width here is overwritten with the border-image-width (if set)
+     - the border-image-width can be omitted below if it is the same as the 4px here
+    */
+     border: dashed 2px #000;/* Individual border image properties */
+     border-image-source: url("/theme/wolbothema/images/border.png");
+     border-image-slice: 6;
+     border-image-repeat: round;
+}
+
+.container {
+    padding-top: 20px;
+    margin: 0 auto 20px;
+    /* border: 1px solid #EEE; */
+    background-color: #000;
+}
+
+.top-bar h1 {
+    font-family: "VT323";
+}
+
+.top-bar h5 {
+    font-family: "VT323";
+}
+
+.top-bar a:hover {
+    text-decoration: none;
+}
+
+.headerphoto {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: right;
+    height: 160px;
+}
+
+.headerphoto p {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    font-size: 48px;
+    line-height: 48px;
+    font-family: 'VT323', serif;
+    padding: 0 12px 12px 0;
+    font-weight: bold;
+}
+.headerphoto small {
+    font-size: 28px;
+    color: #DDD;
+    font-family: 'VT323', serif;
+    font-weight: normal;
+    margin-right: 14px;
+}
+
+div.imageholder {
+    background-color: #FFF;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    padding: 4px;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+footer ul.dropdown {
+    display: none;
+}
+
+/* "bolt_widget" is the default container for widgets in Bolt. */
+.bolt_widget {
+    background: #f2f2f2;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 8px;
+    padding: 6px;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+/* Styles for 'responsive video embeds' --------------------------------  */
+
+.responsive-video {
+    padding-top: 25px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 0 0 1em 0;
+}
+
+.responsive-video iframe {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Styles for 'max-width 479px' -----------------------------------------  */
+@media only screen and (max-width: 479px) {
+
+    .headerphoto {
+        margin-bottom: 0px;
+    }
+
+    .headerphoto span {
+        display: none;
+    }
+    .headerphoto small {
+        display: block;
+        font-size: 22px;
+        color: #FFF;
+        line-height: 26px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-family: 'VT323', serif;
+    }
+
+
+    h6 {
+        font-size: 15px;
+    }
+
+    div.imageholder {
+        float: none;
+        margin: 0 -17px 10px -17px;
+    }
+
+}
+
+nav.top-bar {
+    background: #000;
+}
+
+#menu ul li {
+    background: #000;
+    padding: 0 3px;
+    line-height: 45px;
+    font-size: 1.9em;
+}
+#menu ul li a {
+    font-family: "Share Tech Mono";
+    font-size: 1.1em;
+    background: #F8F8FF;
+    color: #000;
+    padding: 0 6px;
+}
+#menu ul li.active a {
+    text-decoration: underline;
+}
